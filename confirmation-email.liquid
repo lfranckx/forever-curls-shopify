@@ -104,6 +104,13 @@
                         <h2>{{ email_title }}</h2>
                         <!-- Custom Messages for Each Product -->
                         {% for line in line_items %}
+                          <!-- Pop Up Classes Event Information -->
+                          {% if line.product.id == 6714655735872 %}
+                            <img
+                              style="margin: auto;"
+                              src="https://cdn.shopify.com/s/files/1/0099/7795/4368/files/Event_Details-600px.png?v=1681587485"
+                              alt="event details" />
+                          {% endif %}
                           <!-- Academy Certification Package -->
                           {% if line.product.id == 6577713446976 %}
                             <a
